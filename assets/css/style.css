@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+.wrapper {
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  background-color: #ebebeb;
+}
+
+.main {
+  display: flex;
+  padding: 396px 3%;
+  /* box-shadow: 0 0 10px 2px #999; */
+}
+
+.left-container {
+  flex-basis: 39%;
+  background-color: #fff;
+}
+
+.right-container {
+  flex-basis: 61%;
+}
+
+.right-top ul {
+  display: flex;
+  height: 357.6px;
+}
+
+.carousel span {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.left-chevron::before {
+  content: "\f053";
+  font-family: "FontAwesome";
+}
+
+.right-chevron::before {
+  content: "\f054";
+  font-family: "FontAwesome";
+}
+
+.right-bottom {
+  position: relative;
+}
+
+.carousel {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 17.3%;
+  height: 83px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*left container start*/
+.twitter {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.twitter::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f099";
+  left: 0;
+  text-indent: 0;
+  color: #1ea1f1;
+}
+
+.arrow {
+  position: relative;
+  flex-basis: 37%;
+  color: #b8b8b8;
+}
+
+.arrow::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f177";
+  font-size: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 9%;
+  font-size: 19px;
+}
+
+nav {
+  flex-basis: 63%;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b8b8b8;
+  font-weight: 700;
+}
+
+.active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #b8b8b8;
+}
+
+.active a {
+  color: #373737;
+}
+
+.text-container {
+  padding: 145px 21% 0 21%;
+}
+
+h1 {
+  font-size: 72px;
+  margin-bottom: 35px;
+}
+
+.text-container p {
+  font-size: 19px;
+  color: #8e8e8e;
+  margin-bottom: 42px;
+  line-height: 1.3;
+}
+
+.text-container span a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.text-container span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #8e8e8e;
+}
+
+.list-1 {
+  flex-basis: 56%;
+  position: relative;
+}
+
+.list-2 {
+  flex-basis: 44%;
+}
+
+.list-1 figure,
+.list-2 figure,
+.list-1 img,
+.list-2 img,
+.right-bottom figure,
+.right-bottom img {
+  height: 100%;
+}
+
+/* .video {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: #f4ecee;
+  border-radius: 50%;
+}
+
+.video::after {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f04b";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+} */
+
+/* .text-video {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 68.8px;
+  left: 44px;
+} */
+
+/*right container*/
+.right-bottom {
+  height: 366.4px;
+}
+
+/*Responsive Design*/
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .left-container,
+  .list-1,
+  .list-2 {
+    flex-basis: 50%;
+  }
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .main {
+    display: block;
+    padding: 100px 3%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .text-container {
+    padding: 50px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .right-top ul,
+  .right-bottom {
+    height: 300px;
+  }
+
+  .carousel {
+    width: 15%;
+    height: 75px;
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .text-container {
+    padding: 50px 0px 100px;
+  }
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .right-top ul,
+  .right-bottom {
+    height: 250px;
+  }
+
+  .carousel {
+    width: 20%;
+    height: 50px;
+  }
+}
+
+/*media query starts*/
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  nav ul {
+    gap: 25px;
+  }
+}
