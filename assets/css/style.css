@@ -271,6 +271,9 @@ h1 {
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
+  .main {
+    padding: 0;
+  }
   .right-top ul,
   .right-bottom {
     height: 250px;
